@@ -327,14 +327,14 @@ export default function Home() {
   {/* Katana & Martial Arts Video */}
   <div className="border border-gray-700 rounded-lg bg-gray-900 shadow-md p-6">
     <h3 className="text-xl font-semibold text-blue-400">⚔️ Katana Training in Tokyo</h3>
-    <video 
-  controls 
-  preload="none" 
-  poster="/katanas-thumbnail.jpg"  // <-- thumbnail image here
-  className="mt-4 rounded shadow"
->
-  <source src="/katanas-fixed.mp4" type="video/mp4" />
-</video>
+    <Image
+      src="/katanas-thumbnail.jpg"
+      alt="Katana Training Thumbnail"
+      width={640}
+      height={360}
+      className="mt-4 rounded shadow"
+    />
+
 
     <p className="mt-4 text-gray-300 text-sm">
       Practicing precision and discipline with traditional katana cutting techniques  
@@ -345,15 +345,13 @@ export default function Home() {
   {/* Multilingual Public Speaking */}
   <div className="border border-gray-700 rounded-lg bg-gray-900 shadow-md p-6">
     <h3 className="text-xl font-semibold text-blue-400">🌍 Multilingual Public Speaking</h3>
-    <video 
-  controls 
-  preload="none" 
-  poster="/seven-languages-thumbnail.jpg"
-  className="mt-4 rounded shadow"
->
-  <source src="/seven-languages-fixed.mp4" type="video/mp4" />
-</video>
-
+    <Image
+      src="/seven-languages-thumbnail.jpg"
+      alt="Multilingual Public Speaking Thumbnail"
+      width={640}
+      height={360}
+      className="mt-4 rounded shadow"
+    />
     <p className="mt-4 text-gray-300 text-sm">
       Delivered a speech on <strong>freedom</strong> in <strong>7 languages</strong>:  
       French, English, Arabic, German, Spanish, Japanese, and Russian.
