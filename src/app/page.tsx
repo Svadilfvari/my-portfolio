@@ -333,7 +333,7 @@ export default function Home() {
   poster="/katanas-thumbnail.jpg"  // <-- thumbnail image here
   className="mt-4 rounded shadow"
 >
-  <source src="/katanas-web.mp4" type="video/mp4" />
+  <source src="/katanas-fixed.mp4" type="video/mp4" />
 </video>
 
     <p className="mt-4 text-gray-300 text-sm">
@@ -351,7 +351,7 @@ export default function Home() {
   poster="/seven-languages-thumbnail.jpg"
   className="mt-4 rounded shadow"
 >
-  <source src="/seven-languages-web.mp4" type="video/mp4" />
+  <source src="/seven-languages-fixed.mp4" type="video/mp4" />
 </video>
 
     <p className="mt-4 text-gray-300 text-sm">

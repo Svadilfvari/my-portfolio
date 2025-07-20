@@ -77,9 +77,13 @@ export default function NeuroInfinity() {
       {/* Video Demo */}
       <section className="mt-12">
         <h2 className="text-3xl font-bold mb-4 text-white">🎥 Live Demo</h2>
-        <video controls className="w-full rounded-lg shadow-lg">
-          <source src="/demo-neuroinfinity-web.mp4" type="video/mp4" />
-        </video>
+        <video controls preload="none" poster="/seven-languages-thumbnail.jpg" width="640">
+  <source 
+    src="https://github.com/Svadilfvari/my-portfolio/releases/tag/V1.0/demo-neuroinfinity-fixed.mp4" 
+    type="video/mp4" 
+  />
+  
+</video>
       </section>
 
       {/* Key Metrics */}
