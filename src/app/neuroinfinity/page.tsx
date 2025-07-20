@@ -93,6 +93,29 @@ export default function NeuroInfinity() {
         </ul>
       </section>
 
+      {/* 🏆 Award Section */}
+      <section className="mt-12 text-center">
+        <h2 className="text-3xl font-bold mb-4 text-white">🏆 National Recognition</h2>
+        <p className="text-gray-300 max-w-2xl mx-auto mb-6">
+          NeuroInfinity won the <b className="text-white">2nd Prize</b> at the 
+          <i> &quot;My Project in 5 Minutes&quot; </i> national pitch competition, 
+          showcasing innovative student-led projects across France.
+        </p>
+        <div className="flex justify-center">
+          <Image
+            src="/award-ceremony-neuroinfinity.jpg"
+            alt="Award Ceremony - Receiving the Prize"
+            width={600}
+            height={400}
+            className="rounded-lg shadow-lg hover:opacity-90 transition cursor-pointer"
+            onClick={() => setSelectedImage("/award-ceremony-neuroinfinity.jpg")}
+          />
+        </div>
+        <p className="mt-4 text-gray-400 text-sm">
+          📸 Moment of receiving the award at the national competition.
+        </p>
+      </section>
+
       {/* Fullscreen Image Modal */}
       {selectedImage && (
         <div

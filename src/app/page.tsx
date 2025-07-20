@@ -1,37 +1,30 @@
+import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen px-6 py-12 bg-black text-gray-200">
-{/* Hero Section */}
-<section className="flex flex-col items-center text-center">
-  {/* Profile Photo */}
-  <img 
-  src="/me.png" 
-  alt="Edouard David" 
-  className="w-56 h-56 rounded-full border-4 border-gray-800 shadow-xl mb-6 object-cover"
-/>
+    {/* Hero Section */}
+    <section className="flex flex-col items-center text-center">
+      {/* Profile Photo */}
+      <Image src="/me.png" alt="Edouard David" width={224} height={224} className="w-56 h-56 rounded-full border-4 border-gray-800 shadow-xl mb-6 object-cover" />
 
-  <h1 className="text-5xl font-bold text-white">
-    👋 Hi, I'm <span className="text-blue-400">Edouard David</span>
-  </h1>
-  <p className="mt-4 text-lg text-gray-300">
-    <b>Robotics & AI Engineer</b> • <b>ML Researcher</b> • <b>Founder & Inventor</b>
-  </p>
+      <h1 className="text-5xl font-bold text-white">👋 Hi, I&apos;m <span className="text-blue-400">Edouard David</span></h1>
+      <p className="mt-4 text-lg text-gray-300"><b>Robotics &amp; AI Engineer</b> • <b>ML Researcher</b> • <b>Founder &amp; Inventor</b></p>
 
-  {/* Contact Links */}
-  <div className="mt-4 flex flex-wrap justify-center gap-4 text-gray-400">
-    <span>🇫🇷 Paris</span> |
-    <a href="mailto:edouardkdavid@gmail.com" className="text-blue-400 hover:underline">📫 Email</a> |
-    <a href="https://www.linkedin.com/in/edouard-david-6b2594197/" className="text-blue-400 hover:underline">🌐 LinkedIn</a> |
-    <a href="https://github.com/Svadilfvari" className="text-blue-400 hover:underline">🧠 GitHub</a>
-  </div>
-</section>
+      {/* Contact Links */}
+      <div className="mt-4 flex flex-wrap justify-center gap-4 text-gray-400">
+        <span>🇫🇷 Paris</span> |
+        <a href="mailto:edouardkdavid@gmail.com" className="text-blue-400 hover:underline">📫 Email</a> |
+        <a href="https://www.linkedin.com/in/edouard-david-6b2594197/" className="text-blue-400 hover:underline">🌐 LinkedIn</a> |
+        <a href="https://github.com/Svadilfvari" className="text-blue-400 hover:underline">🧠 GitHub</a>
+      </div>
+    </section>
       {/* Divider */}
       <div className="w-24 h-1 bg-gray-700 my-8"></div>
 
       {/* About Me */}
       <section className="max-w-3xl text-center">
         <h2 className="text-3xl font-bold text-white mb-4">🤓 About Me</h2>
-        <p className="mb-2 text-gray-300">🧠 Master's student in <b className="text-white">Automation & Robotics</b> @ Sorbonne Université</p>
+        <p className="mb-2 text-gray-300">🧠 Master&apos;s student in <b className="text-white">Automation &amp; Robotics</b> @ Sorbonne Université</p>
         <p className="mb-2 text-gray-300">🔬 Research experience @ <b className="text-white">University of Tokyo</b>, <b className="text-white">EPFL</b>, <b className="text-white">CentraleSupélec</b></p>
         <p className="mb-2 text-gray-300">🤖 Creator of <b className="text-blue-400">NeuroInfinity</b> – BCI robotic arm for virtual reality</p>
         <p className="text-gray-300">🚀 Passionate about <b className="text-white">embedded AI</b>, <b className="text-white">GPU acceleration</b>, and <b className="text-white">AI for healthcare</b></p>
@@ -43,7 +36,7 @@ export default function Home() {
   {/* Master's Degree */}
   <div className="mb-6">
     <h3 className="text-xl font-semibold text-blue-400">
-      Master's in Automation & Robotics – <span className="text-white">Intelligent Systems Engineering (ISE)</span>
+      Master&apos;s in Automation & Robotics – <span className="text-white">Intelligent Systems Engineering (ISE)</span>
     </h3>
     <p className="text-gray-300">
       2022 – 2025 • Sorbonne Université | Paris, France
@@ -58,12 +51,18 @@ export default function Home() {
     >
       🌐 View Master’s Program
     </a>
+
+    {/* Erasmus Exchange at TUM */}
+    <p className="mt-2 text-gray-300">
+      🌍 Erasmus Nominee at <span className="text-white">🇩🇪 Technical University of Munich (TUM)</span>  
+      – Specialized in <strong>robotics, AI, and sound and image processing</strong>.
+    </p>
   </div>
 
   {/* Bachelor's Degree */}
   <div>
     <h3 className="text-xl font-semibold text-blue-400">
-      Bachelor's in Electronics, Electrical Energy & Automation
+      Bachelor&apos;s in Electronics, Electrical Energy & Automation
     </h3>
     <p className="text-gray-300">
       2020 – 2022 • Sorbonne Université | Paris, France
@@ -78,6 +77,12 @@ export default function Home() {
     >
       🌐 View Bachelor’s Program
     </a>
+
+    {/* Erasmus Exchange at UC3M */}
+    <p className="mt-2 text-gray-300">
+      🌍 Erasmus Nominee at <span className="text-white">🇪🇸 Universidad Carlos III de Madrid (UC3M)</span>  
+      – Focused on <strong>Embedded systems, robotics, Electrical Engineering and Corporate finance</strong>.
+    </p>
   </div>
 </section>
       {/* Tech Stack */}
@@ -154,8 +159,12 @@ export default function Home() {
     {/* EPFL Internship */}
     <div className="border border-gray-700 rounded-lg p-6 bg-gray-900 text-center shadow-md">
       <h3 className="text-xl font-semibold text-blue-400">⚡ NeuroPulse Analyzer (EPFL)</h3>
-      <img src="/neuropulse-logo.png" alt="NeuroPulse Analyzer Logo"   className="mx-auto h-50 w-auto mb-20 rounded"
-      />
+      <Image src="/neuropulse-logo.png" 
+      alt="NeuroPulse Analyzer Logo"   
+      width={300}
+      height={200}
+      className="mx-auto mb-6 rounded"
+    />
       <p className="text-gray-300 text-sm">
         Developed <strong>NeuroPulse Analyzer</strong>, a <strong>10ms latency EMG signal analyzer</strong> for spinal neuromodulation. 
         Presented at Sorbonne Robotics showcase, winning <strong>1st Prize among 80+ projects</strong>.
@@ -168,7 +177,12 @@ export default function Home() {
     {/* HepatoTrack - University of Tokyo */}
     <div className="border border-gray-700 rounded-lg p-6 bg-gray-900 text-center shadow-md">
       <h3 className="text-xl font-semibold text-blue-400">🧪 HepatoTrack (University of Tokyo)</h3>
-      <img src="/hepatotrack-logo.png" alt="HepatoTrack Logo" className="mx-auto h-50 w-auto mb-20 rounded" />
+      <Image src="/hepatotrack-logo.png" 
+      alt="HepatoTrack Logo" 
+      width={300}
+      height={200}
+      className="mx-auto mb-6 rounded"
+    />
       <p className="text-gray-300 text-sm">
         <strong>Patent-pending liver health platform</strong> integrating <strong>KanzoTwin</strong> (CUDA biophysical liver twin), 
         <strong>KanzoNet</strong> (histology AI), <strong>Random Forest patient classifier</strong>, and 
@@ -183,7 +197,12 @@ export default function Home() {
     {/* CNRS LIF Neuron Simulation */}
     <div className="border border-gray-700 rounded-lg p-6 bg-gray-900 text-center shadow-md">
       <h3 className="text-xl font-semibold text-blue-400">🧠 Biological Neuron Simulation (CNRS)</h3>
-      <img src="/lif-neuron-illustration.png" alt="LIF Neuron Simulation" className="mx-auto h-50 w-auto mb-20 rounded"/>
+      <Image src="/lif-neuron-illustration.png" 
+      alt="LIF Neuron Simulation" 
+      width={300}
+      height={200}
+      className="mx-auto mb-6 rounded"
+    />
       <p className="text-gray-300 text-sm">
         <strong>MATLAB-based Leaky Integrate-and-Fire neuron simulation</strong>, 
         reducing simulation time <strong>from 24h (Cadence) to minutes</strong> 
@@ -205,7 +224,12 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Spoild */}
           <div className="border border-gray-700 rounded-lg shadow bg-gray-900 p-6 flex flex-col items-center text-center">
-            <img src="/spoild-logo.png" alt="Spoild Logo" className="h-20 mb-4" />
+          <Image src="/spoild-logo.png" 
+          alt="Spoild Logo" 
+          width={300}
+          height={200}
+          className="mx-auto mb-6 rounded"
+        />
             <h3 className="text-xl font-semibold text-blue-400">🥗 Spoild – Reduce Food Waste</h3>
             <p className="text-gray-400 mt-2">Founder & Product Lead</p>
             <ul className="mt-4 list-disc text-left pl-5 text-gray-300 text-sm">
@@ -223,7 +247,12 @@ export default function Home() {
 
           {/* Neatly */}
           <div className="border border-gray-700 rounded-lg shadow bg-gray-900 p-6 flex flex-col items-center text-center">
-            <img src="/neatly-logo.png" alt="Neatly Logo" className="h-20 mb-4" />
+            <Image src="/neatly-logo.png" 
+            alt="Neatly Logo" 
+            width={300}
+            height={500}
+            className="mx-auto mb-6 rounded"
+          />
             <h3 className="text-xl font-semibold text-blue-400">📊 Neatly – Financial Optimization</h3>
             <p className="text-gray-400 mt-2">Founder</p>
             <ul className="mt-4 list-disc text-left pl-5 text-gray-300 text-sm">
@@ -235,7 +264,12 @@ export default function Home() {
 
           {/* NeuroInfinity */}
           <div className="border border-gray-700 rounded-lg shadow bg-gray-900 p-6 flex flex-col items-center text-center">
-            <img src="/NeuroInfinity_Logo.png" alt="NeuroInfinity Logo" className="h-20 mb-4" />
+          <Image src="/NeuroInfinity_Logo.png" 
+          alt="NeuroInfinity Logo" 
+          width={300}
+          height={200}
+          className="mx-auto mb-6 rounded"
+        />
             <h3 className="text-xl font-semibold text-blue-400">🧠 NeuroInfinity – BCI for VR</h3>
             <p className="text-gray-400 mt-2">Founder & Team Lead</p>
             <p className="mt-2 text-gray-300 text-sm">
@@ -279,7 +313,7 @@ export default function Home() {
 
         </div>
       </section>
-      /* Beyond Engineering */
+      {/* Beyond Engineering */}
 <section className="mt-20 max-w-6xl mx-auto">
   <h2 className="text-3xl font-bold text-center mb-8 text-white">
     🎭 Beyond Robotics & AI
@@ -293,9 +327,15 @@ export default function Home() {
   {/* Katana & Martial Arts Video */}
   <div className="border border-gray-700 rounded-lg bg-gray-900 shadow-md p-6">
     <h3 className="text-xl font-semibold text-blue-400">⚔️ Katana Training in Tokyo</h3>
-    <video controls className="mt-4 rounded shadow">
-      <source src="/katanas-web.mp4" type="video/mp4" />
-    </video>
+    <video 
+  controls 
+  preload="none" 
+  poster="/katanas-thumbnail.jpg"  // <-- thumbnail image here
+  className="mt-4 rounded shadow"
+>
+  <source src="/katanas-web.mp4" type="video/mp4" />
+</video>
+
     <p className="mt-4 text-gray-300 text-sm">
       Practicing precision and discipline with traditional katana cutting techniques  
       at a <strong>dojo near the Imperial Palace in Tokyo</strong>.
@@ -305,9 +345,15 @@ export default function Home() {
   {/* Multilingual Public Speaking */}
   <div className="border border-gray-700 rounded-lg bg-gray-900 shadow-md p-6">
     <h3 className="text-xl font-semibold text-blue-400">🌍 Multilingual Public Speaking</h3>
-    <video controls className="mt-4 rounded shadow">
-      <source src="/seven-languages-speech-web.mp4" type="video/mp4" />
-    </video>
+    <video 
+  controls 
+  preload="none" 
+  poster="/seven-languages-thumbnail.jpg"
+  className="mt-4 rounded shadow"
+>
+  <source src="/seven-languages-web.mp4" type="video/mp4" />
+</video>
+
     <p className="mt-4 text-gray-300 text-sm">
       Delivered a speech on <strong>freedom</strong> in <strong>7 languages</strong>:  
       French, English, Arabic, German, Spanish, Japanese, and Russian.
@@ -335,10 +381,12 @@ export default function Home() {
     <div className="grid md:grid-cols-2 gap-10">
       {/* First Novel - Jon Kallen */}
       <div className="border border-gray-700 rounded-lg bg-gray-900 shadow-md p-6 text-center">
-        <img 
+      <Image
           src="/jon-kallen-cover.png" 
           alt="Jon Kallen: A Devil Turned Angel" 
-          className="mx-auto rounded shadow-lg mb-4" 
+          width={300}
+          height={200}
+          className="mx-auto mb-6 rounded"
         />
         <h4 className="text-lg font-semibold text-blue-300">🔥 Jon Kallen: A Devil Turned Angel</h4>
         <p className="text-gray-400 text-sm italic mt-2">
@@ -347,17 +395,19 @@ export default function Home() {
         <p className="text-gray-300 text-sm mt-2">
           A dark fantasy & sci-fi saga where rage becomes redemption. <em>What does it mean to be a god—to punish, or to forgive?</em>
         </p>
-        <a href="/novels/jon-kallen-sample.pdf" className="text-blue-400 hover:underline mt-3 inline-block">
+        <a href="/jon-kallen-sample.pdf" className="text-blue-400 hover:underline mt-3 inline-block">
           📄 Read Sample Chapter
         </a>
       </div>
 
       {/* Second Novel - Legion of the Six */}
       <div className="border border-gray-700 rounded-lg bg-gray-900 shadow-md p-6 text-center">
-        <img 
+      <Image
           src="/legion-of-the-six-cover.png" 
           alt="Legion of the Six" 
-          className="mx-auto rounded shadow-lg mb-4" 
+          width={300}
+          height={200}
+          className="mx-auto mb-6 rounded"
         />
         <h4 className="text-lg font-semibold text-blue-300">🌌 Legion of the Six (Upcoming)</h4>
         <p className="text-gray-400 text-sm italic mt-2">
@@ -378,7 +428,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-4 text-white">📚 Certifications</h2>
         <p>📈 <a href="https://coursera.org/verify/94UZGQ8MR7XL" className="text-blue-400 hover:underline">Financial Markets – Yale (Coursera)</a></p>
         <p>📊 <a href="https://ude.my/UC-229c0a69-0468-4a0d-b2e6-63cff6b69943" className="text-blue-400 hover:underline">Programmer en R pour la Data Science – Udemy</a></p>
-        <p className="text-gray-300">🌍 Erasmus Scholar @ TUM (Germany) & UC3M (Spain)</p>
+     
       </section>
 
       {/* Languages */}
@@ -389,7 +439,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="mt-12 text-center text-gray-500">
-        <p className="italic">"Invent boldly. Build fast. Think deeply."</p>
+        <p className="italic">&quot;Invent boldly. Build fast. Think deeply.&quot;</p>
         <p className="mt-2">📧 <a href="mailto:edouardkdavid@gmail.com" className="hover:underline">edouardkdavid@gmail.com</a></p>
       </footer>
     </main>

@@ -122,12 +122,46 @@ export default function HepatoTrack() {
         </p>
       </section>
 
+      {/* BioTrack Section */}
+      <section className="mt-12">
+        <Image 
+          src="/biotrack-logo.png" // Placeholder logo for BioTrack
+          alt="BioTrack Logo" 
+          width={300} 
+          height={300} 
+          className="mx-auto mb-4"
+        />
+        <h2 className="text-3xl font-bold text-blue-400">BioTrack – Personalized Drug Tracking</h2>
+        <p className="mt-2 text-gray-400 max-w-2xl mx-auto">
+          <strong>BioTrack</strong> is a <strong>consumer-friendly app</strong> that estimates <strong>drug metabolism and biophysical behavior</strong> in real time. 
+          Users enter simple health data, and the app predicts <strong>drug distribution in blood, liver, fat, and muscle</strong>. 
+          It serves as a <strong>miniaturized companion to HepatoTrack</strong>, offering personalized insights for everyday users.
+        </p>
+
+        {/* Showcase Poster */}
+        <div className="mt-6 flex justify-center">
+          <Image
+            src="/BioTrackerPipeline-2.png" // The poster you provided
+            alt="BioTrack Poster"
+            width={800}
+            height={600}
+            className="rounded-lg shadow-md"
+          />
+        </div>
+
+        {/* Future Integration */}
+        <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
+          In the future, <strong>BioTrack</strong> will integrate with <strong>HepatoTrack</strong> to enable a seamless flow from <strong>consumer health tracking</strong> 
+          to <strong>clinical-grade liver simulations</strong>. This synergy will empower both individuals and clinicians with more accurate, 
+          AI-driven health insights.
+        </p>
+      </section>
+
       {/* Patent Info */}
       <section className="mt-12 text-gray-500 text-sm italic">
         <p>🔒 This software is currently <strong>patent-pending</strong>.  
         For collaboration or research inquiries, please contact me directly.</p>
       </section>
-
     </main>
   );
 }

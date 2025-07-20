@@ -32,7 +32,7 @@ export default function Research() {
   {/* ✅ Poster BELOW */}
   <div className="flex justify-center mt-6">
     <a href="/research/epfl-poster.png" target="_blank" rel="noopener noreferrer">
-      <img
+    <Image 
         src="/research/epfl-poster.png"
         alt="EPFL Internship Poster"
         className="rounded-lg shadow-lg max-w-full h-auto hover:scale-105 transition-transform"
