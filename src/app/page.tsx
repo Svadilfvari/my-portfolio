@@ -294,7 +294,7 @@ export default function Home() {
   <div className="border border-gray-700 rounded-lg bg-gray-900 shadow-md p-6">
     <h3 className="text-xl font-semibold text-blue-400">⚔️ Katana Training in Tokyo</h3>
     <video controls className="mt-4 rounded shadow">
-      <source src="/katanas.mp4" type="video/mp4" />
+      <source src="/katanas-web.mp4" type="video/mp4" />
     </video>
     <p className="mt-4 text-gray-300 text-sm">
       Practicing precision and discipline with traditional katana cutting techniques  
@@ -306,7 +306,7 @@ export default function Home() {
   <div className="border border-gray-700 rounded-lg bg-gray-900 shadow-md p-6">
     <h3 className="text-xl font-semibold text-blue-400">🌍 Multilingual Public Speaking</h3>
     <video controls className="mt-4 rounded shadow">
-      <source src="/seven-languages-speech.mp4" type="video/mp4" />
+      <source src="/seven-languages-speech-web.mp4" type="video/mp4" />
     </video>
     <p className="mt-4 text-gray-300 text-sm">
       Delivered a speech on <strong>freedom</strong> in <strong>7 languages</strong>:  
