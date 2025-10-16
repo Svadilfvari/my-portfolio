@@ -24,8 +24,10 @@ export default function Home() {
       {/* About Me */}
       <section className="max-w-3xl text-center">
         <h2 className="text-3xl font-bold text-white mb-4">🤓 About Me</h2>
-        <p className="mb-2 text-gray-300">🧠 Master&apos;s student in <b className="text-white">Automation &amp; Robotics</b> @ Sorbonne Université</p>
-        <p className="mb-2 text-gray-300">🔬 Research experience @ <b className="text-white">University of Tokyo</b>, <b className="text-white">EPFL</b>, <b className="text-white">CentraleSupélec</b></p>
+        <p className="mb-2 text-gray-300">
+        🧠 Master&apos;s degree — <b className="text-white">Automation & Robotics: Intelligent Systems Engineering (ISE)</b> @ Sorbonne Université — Graduated with final grade <b className="text-white">75.7%</b> (15.14/20, with distinction), ranked <b className="text-white">5th of cohort</b>; thesis defense <b className="text-white">86.5%</b> (17.3/20), ranked <b className="text-white">2nd</b>
+         </p>
+          <p className="mb-2 text-gray-300">🔬 Research experience @ <b className="text-white">University of Tokyo</b>, <b className="text-white">EPFL</b>, <b className="text-white">CentraleSupélec</b></p>
         <p className="mb-2 text-gray-300">🤖 Creator of <b className="text-blue-400">NeuroInfinity</b> – BCI robotic arm for virtual reality</p>
         <p className="text-gray-300">🚀 Passionate about <b className="text-white">embedded AI</b>, <b className="text-white">GPU acceleration</b>, and <b className="text-white">AI for healthcare</b></p>
       </section>
@@ -36,21 +38,22 @@ export default function Home() {
   {/* Master's Degree */}
   <div className="mb-6">
     <h3 className="text-xl font-semibold text-blue-400">
-      Master&apos;s in Automation & Robotics – <span className="text-white">Intelligent Systems Engineering (ISE)</span>
+      Master&apos;s – <span className="text-white">Automation and Robotics: Intelligent Systems Engineering (ISE)</span>
     </h3>
     <p className="text-gray-300">
-      2022 – 2025 • Sorbonne Université | Paris, France
+      Sorbonne Université • Final grade: <b className="text-white">75.7%</b> (15.14/20, with distinction)
     </p>
-    <p className="text-gray-400 text-sm">
-      Ranked <strong>Top 10 of cohort (8th/41)</strong> with minimal grade variance among top students.
+    <p className="text-gray-300">
+      Cohort rank: <b className="text-white">5th</b> • Thesis defense: <b className="text-white">86.5%</b> (17.3/20) – ranked <b className="text-white">2nd</b>
     </p>
     <a
       href="https://sciences.sorbonne-universite.fr/en/masters/masters-degree-automation-and-robotics/intelligent-systems-engineering-isi-course" 
       target="_blank"
       className="text-blue-400 hover:underline text-sm mt-1 inline-block"
     >
-      🌐 View Master’s Program
+      🔗 Program page
     </a>
+
 
     {/* Erasmus Exchange at TUM */}
     <p className="mt-2 text-gray-300">
@@ -62,20 +65,17 @@ export default function Home() {
   {/* Bachelor's Degree */}
   <div>
     <h3 className="text-xl font-semibold text-blue-400">
-      Bachelor&apos;s in Electronics, Electrical Energy & Automation
+      Bachelor&apos;s – <span className="text-white">Electronics, Electrical Energy & Automation (EEA)</span>
     </h3>
     <p className="text-gray-300">
-      2020 – 2022 • Sorbonne Université | Paris, France
-    </p>
-    <p className="text-gray-400 text-sm">
-      Graduated in the <strong>Top 10% of cohort</strong> within the selective CMI Engineering Track.
+      Sorbonne Université • Graduated in the <b className="text-white">top 10% of cohort</b> within the selective <b className="text-white">CMI engineering track</b>
     </p>
     <a
       href="https://sciences.sorbonne-universite.fr/formation-sciences/offre-de-formation/licences-0/licence-discipline/les-l2-l3-nos-huit-3" 
       target="_blank"
       className="text-blue-400 hover:underline text-sm mt-1 inline-block"
     >
-      🌐 View Bachelor’s Program
+      🔗 Program page
     </a>
 
     {/* Erasmus Exchange at UC3M */}
@@ -84,6 +84,15 @@ export default function Home() {
       – Focused on <strong>Embedded systems, robotics, Electrical Engineering and Corporate finance</strong>.
     </p>
   </div>
+</section>
+{/* Awards */}
+<section className="mt-12 max-w-3xl text-center">
+  <h2 className="text-3xl font-bold mb-6 text-white">🏆 Awards & Honors</h2>
+  <ul className="list-disc pl-6 text-gray-300 text-left space-y-2">
+    <li>🥇 <b className="text-white">First place</b>, Best Poster – Sorbonne University Robotics MSc Research Showcase (EPFL internship; 80+ projects)</li>
+    <li>🥈 <b className="text-white">Second place</b>, National “My Project in 5 Minutes” pitch, France (NeuroInfinity)</li>
+    <li>🥈 <b className="text-white">Second place</b>, Best Promotional Video – Sorbonne University MSc program (NeuroInfinity)</li>
+  </ul>
 </section>
       {/* Tech Stack */}
       <section className="mt-12 max-w-3xl text-center">
