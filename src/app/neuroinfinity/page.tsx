@@ -91,7 +91,7 @@ export default function NeuroInfinity() {
 </section>
 
       {/* Key Metrics */}
-      <section className="mt-12">Results: 100% real-time head-orientation via IMU; ~65% offline on 2 -class EEG
+      <section className="mt-12">
         <h2 className="text-3xl font-bold mb-4 text-white">📊 Key Achievements</h2>
         <ul className="list-disc pl-6 text-gray-300 space-y-2">
          <li>100% real-time head-orientation via IMU</li>
