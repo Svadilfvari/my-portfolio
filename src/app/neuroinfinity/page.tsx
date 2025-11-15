@@ -49,7 +49,7 @@ export default function NeuroInfinity() {
           onClick={() => setSelectedImage("/pipeline.png")}
         />
         <p className="mt-4 text-gray-300">
-          EEG signals are cleaned using artifact removal, preprocessed for feature extraction,
+          The targeted pipeline was the following: EEG signals are cleaned using artifact removal, preprocessed for feature extraction,
           classified using deep learning, and translated into robotic arm commands in VR.
         </p>
       </section>
@@ -96,7 +96,7 @@ export default function NeuroInfinity() {
         <ul className="list-disc pl-6 text-gray-300 space-y-2">
           <li>EEG Classification Accuracy: <b className="text-white">65%</b></li>
           <li>VR Robotic Arm Control Latency: <b className="text-white">~150ms</b></li>
-          <li>Integrated artifact removal for clean real-time signals</li>
+          <li>Explored IMU-informed artifact removal for clean real-time signals</li>
           <li>Built by a team of <b className="text-white">6 engineers</b> and <b className="text-white">1 graphic designer</b></li>
         </ul>
       </section>
