@@ -68,7 +68,7 @@ export default function Home() {
       Bachelor&apos;s – <span className="text-white">Electronics, Electrical Energy & Automation (EEA)</span>
     </h3>
     <p className="text-gray-300">
-      Sorbonne Université • Graduated in the <b className="text-white">top 10% of cohort</b> within the selective <b className="text-white">CMI engineering track</b>
+      Sorbonne Université • Graduated in the <b className="text-white">top 20% of cohort</b> within the selective <b className="text-white">CMI engineering track</b>
     </p>
     <a
       href="https://sciences.sorbonne-universite.fr/formation-sciences/offre-de-formation/licences-0/licence-discipline/les-l2-l3-nos-huit-3" 
