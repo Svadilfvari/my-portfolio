@@ -91,10 +91,11 @@ export default function NeuroInfinity() {
 </section>
 
       {/* Key Metrics */}
-      <section className="mt-12">
+      <section className="mt-12">Results: 100% real-time head-orientation via IMU; ~65% offline on 2 -class EEG
         <h2 className="text-3xl font-bold mb-4 text-white">📊 Key Achievements</h2>
         <ul className="list-disc pl-6 text-gray-300 space-y-2">
-          <li>EEG Classification Accuracy: <b className="text-white">65%</b></li>
+         <li>100% real-time head-orientation via IMU</li>
+          <li>Offline classification on 2-class EEG accuracy: <b className="text-white">65%</b></li>
           <li>VR Robotic Arm Control Latency: <b className="text-white">~150ms</b></li>
           <li>Explored IMU-informed artifact removal for clean real-time signals</li>
           <li>Built by a team of <b className="text-white">6 engineers</b> and <b className="text-white">1 graphic designer</b></li>
